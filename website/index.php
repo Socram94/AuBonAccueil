@@ -1,4 +1,4 @@
-<html>
+<html id="hu">
 <head>
 <meta charset="utf-8">
     <title>Au Bon Accueil</title>
@@ -15,7 +15,7 @@
 <div id="mainLanding">
     <h1> Bienvenue sur le site d'ABA </h1>
     <div id="buttonLanding">
-        <button> Rejoignez-nous </button>
+        <button onclick="inputCardSignUp()"> Rejoignez-nous </button>
         <button> Je suis déjà inscrit </button>
     </div>
 </div>
@@ -29,5 +29,5 @@
 <!--
     Include le footer ici
 -->
-
 </html>
+<script src="js/landing.js"></script>
