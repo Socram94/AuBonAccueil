@@ -1,3 +1,19 @@
+footer{
+    bottom: 0;
+}
+
+body{
+    height: 100%;
+    background-image: url('../imgTest/d.jpg') ;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+}
+
+header{
+    background-color: rgba(0,0,0,0.5);
+}
+
 #pageTitle {
     font-size: 1.5em;
     font-weight: bold;
@@ -6,4 +22,42 @@
     padding-top: 0.5em;
     text-align: center;
 }
+
+#socialMediaIcons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  #socialMediaIcons > img{
+    width:1.5%;
+    margin-left: 10px;
+}
+
+#mainLanding > h1{
+    font-size: 5em;
+    color: white;
+}
+
+#mainLanding{
+    text-align: center;
+    margin: 4em;
+    margin-top: 9em;
+}
+
+#mainLanding > #buttonLanding{
+    margin-top: 9em;
+    margin-bottom: 9em;
+}
+
+#buttonLanding > button {
+    border-radius: 10px;
+    border-color: white;
+    background-color: white;
+    padding: 1em;
+}
+
+
+
 
