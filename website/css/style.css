@@ -21,8 +21,6 @@ footer{
 
 #card{
     background-color: black;
-    height: 100%;
-    width: 100%;
 }
 
 #socialMediaIcons > img{
@@ -43,13 +41,10 @@ footer{
     height: 90vh;
     background-image: url('../imgTest/d.jpg') ;
     background-size: cover;
-    backdrop-filter: blur(5px);
     background-repeat: no-repeat;
 }
 
 #mainLanding > #buttonLanding{
-    /* margin-top: 9em;
-    margin-bottom: 9em; */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

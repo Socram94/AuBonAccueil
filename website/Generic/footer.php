@@ -1,4 +1,4 @@
-<footer class="w3-center w3-light-grey w3-padding-32">
+<footer class="w3-center w3-light-grey w3-padding">
     <i>© 2023 Au bon accueil tous droits réservés</i><br><br>
     <div id="socialMediaIcons">
         <img src="img/fb.png" alt="facebook">
