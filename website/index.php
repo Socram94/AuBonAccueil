@@ -15,8 +15,8 @@
 <div id="mainLanding">
     <h1> Bienvenue sur le site d'ABA </h1>
     <div id="buttonLanding">
-        <a href="connexion.php"> Rejoignez-nous </a>
-        <a> Je suis déjà inscrit </a>
+        <a href="signIn.php"> Rejoignez-nous </a>
+        <a href="signUp.php"> Je suis déjà inscrit </a>
     </div>
 </div>
     <!-- bienvenue au bon accueil 

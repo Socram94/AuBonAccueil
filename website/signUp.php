@@ -14,9 +14,15 @@
 ?>
 <div id="mainConnexion">
     <div id="connexionDiv">
-        <form action="connexion.php" method="post" id="connexionForm" style="display: flex; padding: 5%; justify-content: center;">
+        <form action="signIn.php" method="post" id="connexionForm" style="display: flex; padding: 5%; justify-content: center;">
+            <label for="Nom">Nom</label>
+            <input type="Nom" name="Nom" id="Nom" placeholder="Nom">    
+            <label for="Prénom">Prénom</label>
+            <input type="Prénom" name="Prénom" id="Prénom" placeholder="Prénom" required>  
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="confirmEmail">confirmEmail</label>
+            <input type="confirmEmail" name="confirmEmail" id="confirmEmail" placeholder="confirmEmail" required>
             <label for="password">Mot de passe</label>
             <input type="password" name="password" id="password" placeholder="Mot de passe" required>
             <input type="submit" value="Se connecter">
