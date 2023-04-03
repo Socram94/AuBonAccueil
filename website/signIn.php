@@ -21,6 +21,8 @@
             <input type="password" name="password" id="password" placeholder="Mot de passe" required>
             <input type="submit" value="Se connecter">
         </form>
+        <a class="homePageLink" style="text-decoration: none; color: white;"> Mot de passe oublié ? </a>
+        <a class="homePageLink" style="text-decoration: none; color: white;" href="signUp.php"> S'inscrire </a>
     </div>
 </div>
     <!-- bienvenue au bon accueil 

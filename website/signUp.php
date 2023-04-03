@@ -14,7 +14,7 @@
 ?>
 <div id="mainConnexion">
     <div id="connexionDiv">
-        <form action="signIn.php" method="post" id="connexionForm" style="display: flex; padding: 5%; justify-content: center;">
+        <form action="signIn.php" method="post" id="connexionForm" style="display: flex; padding: 5%; justify-content: center; width: 80%">
             <label for="Nom">Nom</label>
             <input type="Nom" name="Nom" id="Nom" placeholder="Nom">    
             <label for="Prénom">Prénom</label>
@@ -27,6 +27,8 @@
             <input type="password" name="password" id="password" placeholder="Mot de passe" required>
             <input type="submit" value="Se connecter">
         </form>
+        <a class="homePageLink" style="text-decoration: none; color: white;"> Mot de passe oublié ? </a>
+        <a class="homePageLink" style="text-decoration: none; color: white;" href="signIn.php"> Se connecter </a>
     </div>
 </div>
     <!-- bienvenue au bon accueil 
