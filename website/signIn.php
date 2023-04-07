@@ -14,7 +14,7 @@
 ?>
 <div id="mainConnexion">
     <div id="connexionDiv">
-        <form action="signIn.php" method="post" id="connexionForm" style="display: flex; padding: 5%; justify-content: center;">
+        <form action="signIn.php" method="POST" id="connexionForm" style="display: flex; padding: 5%; justify-content: center;">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Email" required>
             <label for="password">Mot de passe</label>
