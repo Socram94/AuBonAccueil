@@ -1,14 +1,13 @@
 ###
-POST http://localhost:8081/signUp HTTP/1.1
+POST http://localhost:8080/signUp HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstname": "test",
-    "phonenumber": "0603060607",
-    "lastname": "test",
-    "pseudo": "test",
-    "email": "test@gmail.com",
-    "password": "test"
+    "firstName": "hello",
+    "email": "hello@gmail.com",
+    "password": "hello",
+    "phone": "0606060606",
+    "lastName": "hello@gmail.com"
 }
 
 ###

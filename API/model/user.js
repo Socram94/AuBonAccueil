@@ -2,19 +2,7 @@ const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema(
     {
-      firstname: {
-        type: String,
-        default: ""
-      },
-      phonenumber: {
-        type: String,
-        default: ""
-      },
-      lastname: {
-        type: String,
-        default: ""
-      },
-      pseudo: {
+      firstName: {
         type: String,
         default: ""
       },
@@ -26,15 +14,19 @@ const UserSchema = new mongoose.Schema(
         type: String,
         default: ""
       },
+      phone: {
+        type: String,
+        default: ""
+      },
       token: {
         type: String,
         default: ""
       },
-      fk_role: {
+      isAdmin: {
         type: String,
-        default: ""
+        default: "0"
       },
-      fk_sub: {
+      lastName: {
         type: String,
         default: ""
       }

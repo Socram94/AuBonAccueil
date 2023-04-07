@@ -1,12 +1,11 @@
 const bcrypt = require('bcrypt')
 const UserModel = require('../../model/user.js')
-const RoleModel = require('../../model/role.js')
 const jwt = require("jsonwebtoken");
 const Mongoose = require('mongoose');
 
 const signUp = async (body,res) => {
     
-    if (!body.email || !body.password || !body.lastname || !body.firstname || !body.pseudo || !body.phonenumber) {
+    if (!body.email || !body.password || !body.lastName || !body.firstName || !body.phone) {
         res.status(400).send("All input are required");
     }else {
         const newUser = new UserModel(body)
@@ -21,7 +20,7 @@ const signUp = async (body,res) => {
         }else {
             encryptedPassword = await bcrypt.hash(newUser.password, 10);
             newUser.password = encryptedPassword
-            newUser.fk_role = Mongoose.Types.ObjectId("62e436aa1a254799431166b0")
+            newUser.isAdmin = "0"
             await newUser.save()
             res.status(200).json({message: "User created"})
         }
@@ -42,9 +41,8 @@ const login = async(body,res) => {
         res.status(400).send("Invalid credentials");
     } else {
         console.log(user)
-        const RoleUser = await RoleModel.findOne({_id: user.fk_role})
         //if my user exist and the password match
-        if (user && (await bcrypt.compare(password, user.password)) && RoleUser.name == "user") {
+        if (user && (await bcrypt.compare(password, user.password))) {
           // Create token
           const token = jwt.sign(
             { user_id: user._id, email },
