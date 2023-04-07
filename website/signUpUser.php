@@ -34,4 +34,6 @@ curl_close($curl);
 
 $response = json_decode($json_response, true);
 
+header("Location: http://localhost:8888/AuBonAccueil/website/index.php?i=ok")
+
 ?>

@@ -11,12 +11,17 @@
 <body>
 <?php
     require 'Generic/headerLandingPage.php';
+
+    if(isset($_GET["i"])){
+        if($_GET["i"] == "ok")
+        echo "<div style='background-color: green;'> Merci de validé votre adresse email puis vous connecter pour continuer </div>";
+    }
 ?>
 <div id="mainLanding">
     <h1> Bienvenue sur le site d'ABA </h1>
     <div id="buttonLanding">
-        <a href="signIn.php"> Rejoignez-nous </a>
-        <a href="signUp.php"> Je suis déjà inscrit </a>
+        <a href="signUp.php"> Rejoignez-nous </a>
+        <a href="signIn.php"> Je suis déjà inscrit </a>
     </div>
 </div>
     <!-- bienvenue au bon accueil 
